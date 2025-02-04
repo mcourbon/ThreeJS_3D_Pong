@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pong 3D</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <script type="importmap">
+			{
+				"imports": {
+				"three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+                "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
         }
-        canvas {
-            display: block;
-        }
-    </style>
+			}
+		</script>
 </head>
 <body>
+    <div id="particles-js"></div>
     <script type="module" src="pong.js"></script>
 </body>
 </html>
